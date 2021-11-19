@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+	
+	
+	<div class="card">	
+	
+	<h1>Cadastro de Empresas</h1>
+		<form class="form" th:action="@{/donate}" method="post" th:object="${company}">		
+			<label for="corporate">Razão Social</label>
+			<input type="text" id="corporate" name="corporate" th:field="*{corporate}" placeholder="Razão Social" maxlength="200">	
+			<span class="span" th:errors="*{corporate}"></span>
+			
+			<label for="cnpj">CNPJ</label>
+			<input type="text" id="cnpj" name="cnpj" th:field="*{cnpj}" maxlength="14" placeholder="CNPJ">
+			<span class="span" th:errors="*{cnpj}"></span>
+			
+			<label for="email">E-mail</label>
+			<input type="text" id="email" name="email" th:field="*{email}" placeholder="E-mail">
+			<span class="span" th:errors="*{email}"></span>
+			
+			<label for="quantity">Quantidade</label>
+			<input type="text" id="quantity" name="quantity" th:field="*{quantity}" placeholder="Quantidade">
+			<span class="span" th:errors="*{quantity}"></span>			
+			
+			<label for="product">Produto</label>
+			<input type="text" id="product" name="product" th:field="*{product}" placeholder="Produto">	
+			<span class="span" th:errors="*{product}"></span>
+			
+			<label for="contact">Contato</label>
+			<input type="text" id="contact" name="contact" th:field="*{contact}" placeholder="Contato">
+			<span class="span" th:errors="*{contact}"></span>
+			
+			<div class="form-buttons">						
+				<button class="button">Salvar</button>
+				<a class="button" href="/">Voltar</a>					
+			</div>
+				
+		</form>	
+	</div>	
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="_template :: head"></head>
+
+<body>
+	<h1>Lista de Doações</h1>	
+
+	<table class="table">
+		<tr>
+			<th>Empresa</th>
+			<th>Contato</th>
+			<th>Quantidade</th>
+			<th>Produto</th>
+			<th></th>
+		</tr>
+		<tr th:each="company: ${companies}">
+			<td th:text="${company.corporate}"></td>
+			<td th:text="${company.contact}"></td>
+			<td th:text="${company.quantity}"></td>
+			<td th:text="${company.product}"></td>
+			<td><button type="button" class="button-table">Retirar</button></td>
+		</tr>
+	</table>
+	
+	<div id="button-logout">
+		<a class="button" href="/logout">Sair</a>	
+	</div>
+	
+
+</body>
+</html>

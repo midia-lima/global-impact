@@ -1,0 +1,16 @@
+br\com\global\donatefoodv2\config\OpenAPIConfig.class
+br\com\global\donatefoodv2\advice\ValidationFielError.class
+br\com\global\donatefoodv2\advice\ValidationControllerAdvice.class
+br\com\global\donatefoodv2\controller\CadastroController.class
+br\com\global\donatefoodv2\model\Usuario.class
+br\com\global\donatefoodv2\api\ApiUsuarioController.class
+br\com\global\donatefoodv2\repository\CompanyRepository.class
+br\com\global\donatefoodv2\api\ApiProductController.class
+br\com\global\donatefoodv2\repository\UsuarioRepository.class
+br\com\global\donatefoodv2\DonateFoodV2Application.class
+br\com\global\donatefoodv2\model\Company.class
+br\com\global\donatefoodv2\ServletInitializer.class
+br\com\global\donatefoodv2\config\SecurityConfiguration.class
+br\com\global\donatefoodv2\controller\DonateFoodController.class
+br\com\global\donatefoodv2\service\AuthenticationService.class
+br\com\global\donatefoodv2\controller\LoginController.class

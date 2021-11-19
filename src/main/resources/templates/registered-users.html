@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Usuários Cadastrados</title>
+</head>
+<body>
+	
+	<h2>Usuários Cadastrados</h2>	
+	
+	<ul th:each="user : ${users}">
+		<li>
+		<p th:text="${user.name}"></p>
+		<p th:text="${user.email}"></p>
+		</li>	
+	</ul>	
+	
+	<a href="/task">Voltar</a>
+
+</body>
+</html>
